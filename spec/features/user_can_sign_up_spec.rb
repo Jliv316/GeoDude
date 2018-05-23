@@ -6,7 +6,7 @@ describe 'user visits home page' do
 
       visit '/'
 
-      click_on "Login/Sign Up"
+      click_on "Sign Up"
 
       expect(current_path).to eq(new_user_path)
 

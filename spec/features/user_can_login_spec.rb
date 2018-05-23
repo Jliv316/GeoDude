@@ -2,16 +2,19 @@ require 'rails_helper'
 
 describe 'user visits home page' do
   context 'able to login' do
-    xit 'redirects to show page' do
+    it 'redirects to show page' do
+      username = "jimboslice123"
+      password = "password123"
+      user = User.create(username: username, password: password)
+
       visit '/'
 
-      click_on "Login/Sign Up"
+      click_on "Login"
 
-      expect(current_path).to eq(new_user_path)
+      expect(current_path).to eq(login_path)
 
       fill_in "user[username]", with: "jimboslice123"
       fill_in "user[password]", with: "password123"
-      fill_in "user[password1]", with: "password123"
 
       click_on "Login"
 
