@@ -1,75 +1,41 @@
-    <div class="wrapper">
-        <div id="top_bar">
-          <div class="nested">
-            <img src="https://raw.githubusercontent.com/google/material-design-icons/master/social/2x_web/ic_share_black_48dp.png">
-            <div>Share</div>
-          </div>
-          <div class="nested">
-            <img src="https://raw.githubusercontent.com/google/material-design-icons/master/action/2x_web/ic_toc_black_48dp.png">
-            <div>Index</div>
-          </div>
-          <div class="nested">
-            <img src="https://raw.githubusercontent.com/google/material-design-icons/master/social/2x_web/ic_people_black_48dp.png">
-            <div>Points</div>
-          </div>
-          <div class="nested">
-            <img id="geodude_left"src="/Users/jlivingston1/Turing/2module/projects_2/geomarketing/app/assets/images/GeoDudeLeft.png">
-            <div>GeoDude</div>
-            <img id="geodude_right" src="./app/assets/images/GeoDudeRight.png">
-          </div>
-          <div id="top_right">
-            <div>
-              <span><%= link_to "Login", login_path%>/<%= link_to "Sign Up", new_user_path %></span>
-            </div>
-            <img src="https://raw.githubusercontent.com/google/material-design-icons/master/action/2x_web/ic_dns_black_48dp.png">
-          </div>
-        </div>
-    </div>
+<!DOCTYPE html>
+<html>
 
-    <div id="header">
-      <span>Companies</span>
-    </div>
+<head>
+  <title>John Livingston</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
 
-    <div class="container">
-      <!-- apple logo and points symbol -->
-      <div>
-        <div class="company">
-            <div id="points">
-              <img src="https://raw.githubusercontent.com/google/material-design-icons/master/maps/2x_web/ic_local_play_black_48dp.png">
-              <span>234</span>
-            </div>
-              <img src="https://forums.macrumors.com/attachments/apple-logo-gif.87561/">
-        </div>
-      </div>
-      <!-- target logo and points symbol -->
-      <div>
-        <div class="company">
-            <div id="points">
-              <img src="https://raw.githubusercontent.com/google/material-design-icons/master/maps/2x_web/ic_local_play_black_48dp.png">
-              <span>234</span>
-            </div>
-              <img src="https://www.freepnglogos.com/uploads/target-png-logo/target-logo-circle-red-png-0.png">
-        </div>
-      </div>
-      <!-- best buy logo and points symbol -->
-      <div>
-        <div class="company">
-            <div id="points">
-              <img src="https://raw.githubusercontent.com/google/material-design-icons/master/maps/2x_web/ic_local_play_black_48dp.png">
-              <span>234</span>
-            </div>
-              <img src="https://corporate.bestbuy.com/wp-content/uploads/2015/12/best-buy.png">
-        </div>
-      </div>
-      <!-- dunkin' donuts and points symbol -->
-      <div>
-        <div class="company">
-            <div id="points">
-              <img src="https://raw.githubusercontent.com/google/material-design-icons/master/maps/2x_web/ic_local_play_black_48dp.png">
-              <span>234</span>
-            </div>
-              <img src="http://assets.stickpng.com/thumbs/584fccf46a5ae41a83ddee90.png">
-        </div>
-      </div>
-    <!-- container ending div -->
-    </div>
+<body>
+  <section class="container">
+    <section class="grid1">
+      <section class="subgrid1">
+        <section class="header subgrid12">
+          <p>GEOSAVE</p>
+          <span class="sub_header">Technology that gives back...</span>
+        </section>
+        <section class="subgrid13">
+        <form action='/login' method='GET'>
+            <button class="btn" type="submit">Login</button>
+        </form>
+          <form action='/users/new' method='GET'>
+            <button class="btn" type="submit">Sign Up</button>
+          </form>
+        </section>
+      </section>
+      <!-- src="images/GeoDudeLogo.png" alt="GeoDude Logo"> -->
+    </section>
+    <section class="grid2">
+      <section class="subgrid2">
+        <section class="subgrid21">
+          <p>A GEOMARKETING APPLICATION</p>
+        </section>
+      </section>
+    </section>
+  </section>
+</body>
+
+</html>

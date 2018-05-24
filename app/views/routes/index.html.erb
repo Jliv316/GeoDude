@@ -1,4 +1,9 @@
 <h2>Routes:</h2>
-<% current_user.routes.each do |route| %>
-  <li><%= route.street%></li>
+<% @user.routes.each do |route| %>
+  <ul>
+  <li><%= route.start%> --> <%= route.finish%></li>
+    <% route.companies.each do |company| %>
+      <li><%= company.name %></li>
+    <%end%>
+  </ul>
 <%end%>

@@ -2,7 +2,8 @@ require 'rails_helper'
 
 describe Route, type: :model do
   describe 'validations' do
-    it {should validate_presence_of(:street)}
+    it {should validate_presence_of(:start)}
+    it {should validate_presence_of(:finish)}
   end
 
   describe 'relationships' do

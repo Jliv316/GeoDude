@@ -1,0 +1,8 @@
+<article class="container">
+  <section class="Grid1"><h2>Points by Company:</h2>
+    <% @points_by_company.each do |company, points|%>
+      <li><%=company%>: <%=points%> points</li>
+    <%end%>
+  </section>
+</article>
+
